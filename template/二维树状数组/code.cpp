@@ -8,8 +8,9 @@ static const int H = 502;
 static const int N = 1e4 + 1;
 int tree[V][H];
 int arr[N];
+int ori[V][H];
 
-int getmax(int x,int y)
+int getmax(int x1,int y1,int x2,int y2)
 {
     int res = INT_MIN;
     for(int i = x; i >= 1; i ^= i & -i)
@@ -24,6 +25,7 @@ int getmax(int x,int y)
 
 void update(int x,int y,int val)
 {
+    ori[x][y] = val;
     for(int i = x; i < V; i += i & -i)
     {
         for(int j = y; j < H; j += j & -j)
