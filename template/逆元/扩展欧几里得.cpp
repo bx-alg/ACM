@@ -1,4 +1,4 @@
-
+// 适用于x和mod 互质
     ll getInv(ll x)
     {
         int M = mod;
