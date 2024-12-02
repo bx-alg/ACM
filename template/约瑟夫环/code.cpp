@@ -1,3 +1,5 @@
+// 当编号从0开始 时
+
 class Solution
 {
 public:
@@ -8,3 +10,5 @@ public:
     }
 
 };
+
+ 
