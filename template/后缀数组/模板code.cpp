@@ -59,6 +59,7 @@ void getsa()
             else
                 x[sa[i]] = ++m;
         }
+        if(m == n)break;
     }
 }
 
