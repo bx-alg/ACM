@@ -28,7 +28,7 @@ void add(int u, int v)
 }
 int a[N];
 int f[N];
-int dfn[N], low[N], stk[N], scc[N], siz[N], weit[N], bri[N];
+int dfn[N], low[N], stk[N], ecc[N], siz[N], weit[N], bri[N];
 int id, tp, tot;
 void dfs(int u, int inedge)
 {
@@ -57,7 +57,7 @@ void dfs(int u, int inedge)
         do
         {
             x = stk[tp--];
-            scc[x] = id;
+            ecc[x] = id;
             siz[id]++;
 
         } while (x != u);
@@ -85,7 +85,7 @@ void solve()
     rep(i, 0,cnt-1)
     {
         if(bri[i])
-            in[scc[e[i].v]]++;
+            in[ecc[e[i].v]]++;
     }
     int cnt = 0;
     rep(i, 1, id)
