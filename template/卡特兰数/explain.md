@@ -1,4 +1,4 @@
-### 卡特兰数（Catalan Numbers）的四种表达式
+### 卡特兰数 (Catalan Numbers) 的四种表达式
 
 1. ​**组合数差形式**​  
    $$
