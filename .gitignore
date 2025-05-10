@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+
+# 编译输出
+/build/
+/bin/
+/obj/
+
+# 临时文件
+*.log
+*.tmp
+*.swp
+*.bak
+
+# IDE 配置文件
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS 文件
+Thumbs.db
+Desktop.ini
+
+# Python（如使用）
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# C++ 常见忽略
+*.o
+*.out
+*.exe
+*.a
+*.so
+
+# 压缩包
+*.zip
+*.tar
+*.gz
+*.7z
