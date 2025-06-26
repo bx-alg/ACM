@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++-14 + CodeLLDB 调试当前文件",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "stopOnEntry": false,
+            "runInTerminal": true,
+            "preLaunchTask": "g++-14 build"
+        }
+    ]
+}
